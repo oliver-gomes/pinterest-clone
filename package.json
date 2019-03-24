@@ -1,0 +1,30 @@
+{
+  "name": "pinterest-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliver-gomes/pinterest-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliver-gomes/pinterest-clone/issues"
+  },
+  "homepage": "https://github.com/oliver-gomes/pinterest-clone#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "timeago.js": "^4.0.0-beta.2",
+    "uuid": "^3.3.2"
+  }
+}

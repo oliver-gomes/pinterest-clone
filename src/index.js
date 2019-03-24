@@ -12,10 +12,15 @@ app.set("view engine", "ejs");
 
 // Middlewares
 app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: true }));
+app.use(
+  multer({ dest: path.join(__dirname, "public/img/uploads") }).single("image")
+);
 
 // Global variables
 
 // Routes
+app.use(require("./routes/index"));
 
 // Static files
 

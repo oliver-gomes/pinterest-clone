@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Pinterest Clone</title>
+  </head>
+
+  <body>
+    <%- include("partials/header") %>
+    <div class="container p-4">
+      <div class="row">
+        <div class="card-columns">
+          <% images.forEach(function(image){ %>
+          <div class="card">
+            <img src="<%= image.path %>" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                <%= image.title %>
+              </h5>
+              <p class="card-text">
+                <%= image.description %>
+              </p>
+              <p class="card-text">
+                <%= image.created_at %>
+              </p>
+              <p class="card-text">
+                <%= format(image.created_at) %>
+              </p>
+              <a href="/image/<%= image._id %>" class="btn btn-primary"
+                >View Profile</a
+              >
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

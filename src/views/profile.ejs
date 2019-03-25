@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <%- include("partials/head") %>
+    <title>Image Profile</title>
+  </head>
+  <body>
+        <div class="container p-4">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                      
+                                    <div class="card animated fadeInDown">
+                                      <img src="<%= image.path %>" class="card-img-top" />
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                                          <%= image.title %>
+                                        </h5>
+                                        <p class="card-text">
+                                          <%= image.description %>
+                                        </p>
+                                        <p class="card-text">
+                                          <%= image.created_at %>
+                                        </p>
+                                        <p class="card-text">
+                                          <%= format(image.created_at) %>
+                                        </p>
+                                        <a href="/image/<%= image._id %>/delete" class="btn btn-danger btn-block"
+                                          >Delete Image</a
+                                        >
+                                      </div>
+                             
+                                  </div>
+                    </div>
+
+                  
+
+                </div>
+  </body>
+</html>

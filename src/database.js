@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/pinterestDB");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/pinterestDB");
 
 const db = mongoose.connection;
 

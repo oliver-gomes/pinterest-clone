@@ -6,4 +6,6 @@
 - Integrated backend API with Client Side using EJS. Passed on the data from the input field to Node Backend to handle data stortage
 - Connected to MongoDB Schema Model with Backend API and inserted the fetched data to MongoDB data model
 
+Use the App [here](https://pinterest-nodemongo.herokuapp.com/)
+
 Read more at [Portfolio Blog Post](https://oliver-gomes.github.io/v4/pinterest-clone)
